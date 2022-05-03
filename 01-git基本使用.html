@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>git基本使用</title>
+</head>
+<body>
+    <p>配置用户名 git config --global user.name "lhf2020"</p>
+    <p>配置用户邮箱 git config --global user.email "253670820@qq.com"</p>
+    <p>第一步:在项目根目录下运行 git init 初始化git仓库</p>
+    <p>查看文件状态命令 git status -s</p>
+    <p>第二步:运行 git add 文件名(文件夹名,查看状态中未被跟踪的名字)跟踪新文件，git add . 添加全部文件到暂存区跟踪</p>
+    <p>跟踪新文件时如出现  warning: LF will be replaced by CRLF in ****** 错误，运行命令 git config --global core.autocrlf false</p>
+    <p>第三步:运行 git commit -m "备注" 提交更新</p>
+    <p>提交文件时使用 -a 参数可跳过第二步，将所有已跟踪文件提交 git commit -a "备注"</p>
+    <p>项目修改后，重复第二步和第三步重新跟踪及提交</p>
+    <p>撤销对项目的修改 git checkout --文件名</p>
+    <p>取消暂存区文件(跟踪) git reset HEAD 要移除的文件名</p>
+    <p>从仓库和工作区中移除文件 git rm -f 文件名</p>
+    <p>从仓库中移除文件，保留工作区文件 git rm --cached 文件名</p>
+    <p>使用 .gitignore 配置文件忽略git文件</p>
+    <p>查看提交历史 git log</p>
+    <p>回退到指定版本 git reset --hard &lt;CommitID&gt;</p>
+
+</body>
+</html>
